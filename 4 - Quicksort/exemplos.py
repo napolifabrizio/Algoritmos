@@ -36,3 +36,19 @@ def quicksort(lista: list) -> list:
 
 lista_ordenada = quicksort(nums_3)
 print(lista_ordenada)
+
+## Exemplo Quadrado - 145
+
+
+def highest_square(side_a, side_b):
+    if side_a % side_b == 0:
+        return side_b
+    else:
+        side_c = side_a % side_b
+        return highest_square(side_b, side_c)
+
+
+num1 = 1680
+num2 = 400
+
+print(highest_square(num1, num2))

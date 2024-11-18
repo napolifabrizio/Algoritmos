@@ -26,7 +26,7 @@ def ordenacaoPorSelecao(lista):
         nova_lista.append(lista.pop(menor))
     print(nova_lista)
 
-print(ordenacaoPorSelecao(numeros))
+# print(ordenacaoPorSelecao(numeros))
 
 ### Comparações Array x Lista
 
@@ -51,19 +51,19 @@ def append_item_array():
     return res
 
 def search_item_list():
-    data_list = [x for x in range(1, 10000000)]
+    data_list = [x for x in range(1, 100000000)]
     t0 = time.time()
-    item = data_list[700000]
+    item = data_list[len(data_list) - 1]
     print(item)
     t1 = time.time()
     res = Decimal(t1 - t0)
     return res
 
 def search_item_array():
-    data = [x for x in range(1, 10000000)]
+    data = [x for x in range(1, 100000000)]
     data_array = arr.array("i", data)
     t0 = time.time()
-    item = data_array[700000]
+    item = data_array[len(data_array) - 1]
     print(item)
     t1 = time.time()
     res = Decimal(t1 - t0)
