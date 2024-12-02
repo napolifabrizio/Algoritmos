@@ -1,26 +1,46 @@
-{
-    "livro": {
-        "father": 0,
-        "cost": 0
+[
+    {
+        "livro": {
+            "father": 0,
+            "cost": 0
+        },
+        "LP": {
+            "father": "livro",
+            "cost": 3
+        },
+        "Poster": {
+            "father": "livro",
+            "cost": 2
+        },
+        "Bateria": {
+            "father": "Poster",
+            "cost": 6
+        },
+        "Baixo": {
+            "father": "LP",
+            "cost": 5
+        },
+        "Piano": {
+            "father": "Baixo",
+            "cost": 13
+        }
     },
-    "LP": {
-        "father": "livro",
-        "cost": 3
-    },
-    "Poster": {
-        "father": "livro",
-        "cost": 2
-    },
-    "Bateria": {
-        "father": "Poster",
-        "cost": 6
-    },
-    "Baixo": {
-        "father": "LP",
-        "cost": 5
-    },
-    "Piano": {
-        "father": "Baixo",
-        "cost": 13
+    {
+        "inicio": {
+            "father": 0,
+            "cost": 0
+        },
+        "A": {
+            "father": "B",
+            "cost": 5
+        },
+        "B": {
+            "father": "inicio",
+            "cost": 2
+        },
+        "fim": {
+            "father": "B",
+            "cost": 7
+        }
     }
-}
+]
